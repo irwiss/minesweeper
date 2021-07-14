@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="btn_corner_radius">8dp</dimen>
+    <dimen name="btn_vpadding">8dp</dimen>
+    <dimen name="btn_hpadding">16dp</dimen>
+</resources>

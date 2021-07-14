@@ -1,0 +1,5 @@
+<resources>
+    <style name="RedAccent" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="colorAccent">#FFFF0000</item>
+    </style>
+</resources>

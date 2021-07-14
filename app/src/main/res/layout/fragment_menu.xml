@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbarStyle="insideOverlay"
+    tools:context=".MenuFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/game_setup"
+            android:cropToPadding="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/broom"
+            app:layout_constraintBottom_toTopOf="@+id/fieldX"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewWidth"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:labelFor="@id/fieldX"
+            android:text="@string/field_width"
+            app:layout_constraintBottom_toBottomOf="@+id/fieldX"
+            app:layout_constraintEnd_toStartOf="@+id/fieldX"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/fieldX" />
+
+        <EditText
+            android:id="@+id/fieldX"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"
+            android:selectAllOnFocus="true"
+            android:textAlignment="viewStart"
+            android:importantForAutofill="no"
+            app:layout_constraintBottom_toTopOf="@+id/fieldY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textViewWidth"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewLogo" />
+
+        <TextView
+            android:id="@+id/textViewHeight"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:labelFor="@id/fieldY"
+            android:text="@string/field_height"
+            app:layout_constraintBottom_toBottomOf="@+id/fieldY"
+            app:layout_constraintEnd_toStartOf="@+id/fieldY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/fieldY" />
+
+        <EditText
+            android:id="@+id/fieldY"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:selectAllOnFocus="true"
+            android:textAlignment="viewStart"
+            android:importantForAutofill="no"
+            app:layout_constraintBottom_toTopOf="@+id/seekBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textViewHeight"
+            app:layout_constraintTop_toBottomOf="@+id/fieldX" />
+
+        <TextView
+            android:id="@+id/textViewDifficulty"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:hyphenationFrequency="none"
+            android:text="@string/difficulty"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/seekBar"
+            app:layout_constraintEnd_toStartOf="@+id/seekBar"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/seekBar" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:max="100"
+            android:progress="50"
+            android:progressTint="@color/orange2"
+            android:thumbTint="@color/orange0"
+            app:layout_constraintBottom_toTopOf="@+id/checkBoxFreeDig"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textViewDifficulty"
+            app:layout_constraintTop_toBottomOf="@+id/fieldY" />
+
+        <CheckBox
+            android:id="@+id/checkBoxFreeDig"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:buttonTint="@color/orange2"
+            android:checked="true"
+            android:text="@string/free_dig"
+            android:textAlignment="textStart"
+            app:layout_constraintBottom_toBottomOf="@id/button_play"
+            app:layout_constraintEnd_toEndOf="@+id/textViewDifficulty"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/textViewDifficulty"
+            app:layout_constraintTop_toTopOf="@id/button_play" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_shape"
+            android:text="@string/play"
+            app:layout_constraintEnd_toEndOf="@+id/seekBar"
+            app:layout_constraintStart_toStartOf="@+id/seekBar"
+            app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+        <TextView
+            android:id="@+id/tvLargeBoardWarning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/large_board_warning"
+            android:textAlignment="center"
+            android:textColor="@color/orange0"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_play" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

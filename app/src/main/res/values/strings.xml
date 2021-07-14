@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Minesweeper</string>
+    <string name="game_setup">Welcome to Minesweeper!</string>
+    <string name="field_width">Width</string>
+    <string name="field_height">Height</string>
+    <string name="difficulty">Difficulty (%1$d bombs)</string>
+    <string name="back_to_menu">Quit to menu</string>
+    <string name="return_to_menu">Return to menu</string>
+    <string name="win_string">You Won!</string>
+    <string name="lose_string">You Lost!</string>
+    <string name="play">Play</string>
+    <string name="free_dig">Free first cell</string>
+    <string name="large_board_warning">⚠ Large boards require large screen or stylus.</string>
+</resources>

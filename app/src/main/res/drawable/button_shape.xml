@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <gradient android:angle="135" android:endColor="@color/orange1" android:startColor="@color/orange1" />
+            <corners android:radius="@dimen/btn_corner_radius" />
+            <padding
+                android:bottom="@dimen/btn_vpadding"
+                android:left="@dimen/btn_hpadding"
+                android:right="@dimen/btn_hpadding"
+                android:top="@dimen/btn_vpadding" />
+            <stroke android:width="4dp" android:color="@color/white" />
+        </shape>
+    </item>
+
+    <item android:state_hovered="true">
+        <shape android:shape="rectangle">
+            <gradient android:angle="135" android:endColor="@color/orange1" android:startColor="@color/orange3" />
+            <corners android:radius="@dimen/btn_corner_radius" />
+            <padding
+                android:bottom="@dimen/btn_vpadding"
+                android:left="@dimen/btn_hpadding"
+                android:right="@dimen/btn_hpadding"
+                android:top="@dimen/btn_vpadding" />
+            <stroke android:width="4dp" android:color="@android:color/white" />
+        </shape>
+    </item>
+
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <gradient android:angle="225" android:endColor="@color/orange1" android:startColor="@color/orange3" />
+            <corners android:radius="@dimen/btn_corner_radius" />
+            <padding
+                android:bottom="@dimen/btn_vpadding"
+                android:left="@dimen/btn_hpadding"
+                android:right="@dimen/btn_hpadding"
+                android:top="@dimen/btn_vpadding" />
+            <stroke android:width="4dp" android:color="@color/light_blue_A200" />
+        </shape>
+    </item>
+
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:angle="225" android:endColor="@color/orange1" android:startColor="@color/orange3" />
+            <corners android:radius="@dimen/btn_corner_radius" />
+            <padding
+                android:bottom="@dimen/btn_vpadding"
+                android:left="@dimen/btn_hpadding"
+                android:right="@dimen/btn_hpadding"
+                android:top="@dimen/btn_vpadding" />
+            <stroke android:width="4dp" android:color="@android:color/black" />
+        </shape>
+    </item>
+</selector>
