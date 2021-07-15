@@ -2,6 +2,8 @@
 
 A simple minesweeper game to explore android apis
 
+![image](https://user-images.githubusercontent.com/6560075/125794169-1e922e31-cb04-44c5-9c1c-02aa8962717b.png)
+
 ## Assets
 
 Using a bunch of free assets:
